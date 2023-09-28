@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GrizzlyPlot"
+version = "0.0.1"
+description = "GrizzlyPlot: a package for Grammar-of-Graphics style declarative visualization with Polars and Matplotlib"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["Polars", "Grammar of Graphics"]
+license = {text = "BSD 3-Clause License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+"numpy >= 1.23.4",
+"polars >= 0.19.0",
+"matplotlib >= 3.6.0",
+"pyarrow >= 11.0.0",
+"KDEpy >= 1.1.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]  # ["."] by default
